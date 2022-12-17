@@ -1,0 +1,9 @@
+.wrapper {
+  display: grid;
+  width: 640px;
+  height: 640px;
+}
+
+.square {
+  background-color: aquamarine;
+}
