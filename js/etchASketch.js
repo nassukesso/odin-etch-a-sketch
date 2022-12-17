@@ -10,6 +10,12 @@ for (let i = 0; i < 256; i++) {
   let squareDiv = document.createElement("div");
   squareDiv.className = "square";
   wrapperDiv.appendChild(squareDiv);
+  squareDiv.addEventListener("mouseover", () => {
+    squareDiv.classList.add("hover");
+  })
+  squareDiv.addEventListener("mouseout", () => {
+    squareDiv.classList.remove("hover");
+  })
 }
 
 wrapperDiv.style.gridTemplateColumns = "repeat(16, 1fr)";
